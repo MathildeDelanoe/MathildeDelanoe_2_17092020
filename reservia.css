@@ -1,0 +1,92 @@
+@font-face
+{
+    font-family: 'Raleway';
+    src: url('Raleway/Raleway-VariableFont_wght.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+#page
+{
+	margin:auto;
+	width:900px;
+	font-family:Raleway, Arial,sans-serif;
+	
+}
+
+header
+{
+	display:flex;
+	justify-content : space-between;
+}
+
+#logo
+{
+	display:flex;
+	align-items:center;
+	width:60px;
+
+}
+
+nav ul
+{
+	list-style-type: none;
+	display:flex;
+	padding-left:0px;
+	padding-top:10px;
+	font-size:0.7em;
+}
+
+nav li
+{
+	margin:10px 20px 20px 20px;
+}
+
+.ancre a 
+{
+	
+	text-decoration:none;
+	color:black;
+	
+}
+
+.ancre a:hover,.ancre a:focus
+{
+	border-top:1px solid blue;
+	padding:25px 10px 0px 10px;
+	color:#0065FC;
+}
+
+#inscription a
+{
+	color:#0065FC;
+	font-weight:bold;
+	text-decoration:none;
+}
+
+footer
+{
+	background-color:#F2F2F2;
+	display:flex;
+	font-size:0.8em;
+	width: 950px;
+	margin:auto;
+}
+
+h3
+{
+	font-size:1em;
+}
+
+footer div
+{
+	margin:15px 130px 30px 30px;
+	
+}
+
+footer div p
+{
+	margin:0px 0px 5px 0px;
+	
+}
+
