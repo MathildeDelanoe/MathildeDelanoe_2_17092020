@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 <html>
+    <html lang="fr"></html>
     <head>
         <meta charset="utf-8" />
-		<link rel="stylesheet" href="reservia.css" />
+        <link rel="stylesheet" href="reservia.css" />
+        <link href="fontawesome-free-5.14.0-web\fontawesome-free-5.14.0-web\css\all.css" rel="stylesheet">
         <title>Reservia</title>
     </head>
 
@@ -10,19 +12,69 @@
 		<div id="page">
 
             <header>
-				<div id="logo">
+				<div>
 					<img src="images/logo/reservia@3x.png" alt="reservia" />
 				</div>
 			
 				<nav>
 					<ul>
-						<li class="ancre"><a href="#hebergements"> Hébergements </a></li>
-						<li class="ancre"><a href="#activités">Activités </a></li>
-						<li id="inscription"><a href="https://www.google.com/"> S'inscrire </a></li>
+						<li><a href="#hebergements"> Hébergements </a></li>
+						<li><a href="#activites">Activités </a></li>
+						<li><a href="https://www.google.com/"> S'inscrire </a></li>
 					</ul>
 				</nav>
 			
 			</header>
+
+            <section class="recherche">
+				<h1> Trouvez votre hébergement pour des vacances de rêve </h1>
+				<p> En plein centre ville ou en pleine nature </p>
+                
+
+
+                <form method="post" action="donnees.php">
+					<div>
+						<p><i class="fas fa-map-marker-alt"></i></p>
+					</div>
+					<p><a href="https://www.google.com/" target="_blank">Rechercher</a></p>
+					<p><input type="search" name="ville" value="Marseille,France"/></p>
+	
+                </form>
+                
+                <ul>
+					<li>Filtres</li>
+					<li>
+						<div>
+							<p><i class="fas fa-money-bill-wave"></i></p>
+						</div><a href="https://www.google.com/" target="_blank">Economique</a>
+					</li>
+
+					<li>
+						<div>
+							<p><i class="fas fa-child"></i></p>
+						</div><a href="https://www.google.com/" target="_blank">Familial</a>
+					</li>
+
+					<li>
+						<div>
+							<p><i class="fas fa-heart"></i></p>
+						</div><a href="https://www.google.com/" target="_blank">Romantique</a>
+					</li>
+
+					<li> 
+						<div>
+							<p><i class="fas fa-dog"></i></p>
+						</div><a href="https://www.google.com/" target="_blank">Animaux autorisés</a>
+					</li>
+
+				</ul>
+					
+					<div>
+						<p><i class="fas fa-info"></i></p>
+						<p> Plus de 500 logements sont disponibles dans cette ville </p>
+					</div>
+
+            </section>
 
 
         </div>
