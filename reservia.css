@@ -231,6 +231,170 @@ section p
 	margin-top:5px;
 }
 
+/*partie hébergements et populaire*/
+.heb_pop
+{
+	display:flex;
+	justify-content:space-between;
+}
+
+
+.hebergements
+{
+	background-color:#F2F2F2;
+	width:69%;
+	height:430px;
+	border-radius:10px;
+}
+
+.hebergements h2,aside h2
+{
+	font-size: 0.8em;
+	padding-top:15px;
+	padding-left:20px;
+}
+
+.heb_pop h2+div
+{
+	display:flex;
+	flex-wrap: wrap;
+	/* border:1px solid green; */
+}
+
+.heb_pop h2+div p
+{
+	margin:0px 0px 3px 0px;
+}
+
+ 
+.hebergements p
+{
+	font-size: 0.6em;
+	padding-left:8px;
+} 
+
+.hebergements a
+{
+	color:black;
+	text-decoration:none;
+	font-weight:bold;
+	padding-left:10px;
+}
+
+.hebergements div:first-of-type div:nth-child(odd)
+{
+	background-color:white;
+	width:30%;
+	height:55%; 
+	margin-left:2.5%;
+	border-radius : 10px;
+	margin-bottom:20px;
+	box-shadow:6px 6px 12px #F2F2F2;
+}
+
+
+
+.hebergements div:first-of-type div:nth-child(even)
+{
+	background-color:white;
+	width:30%;
+	height:55%; 
+	margin-left:2.5%;
+	border-radius : 10px;
+	margin-bottom:20px;
+	box-shadow:6px 6px 12px #F2F2F2;
+}
+
+
+.hebergements figcaption
+{
+	font-size:0.6em;
+	font-weight:bold;
+	padding-top:2px;
+	padding-left:5px;
+}
+
+
+.blue{
+	color:#0065FC; 
+	font-size:7px;
+}
+
+.grey{
+	color:rgb(212,212,212);
+	font-size:7px;
+}
+
+
+
+aside
+{
+	background-color:#F2F2F2;
+	width:28%;
+	height:430px;
+	border-radius:10px;
+	display:flex;
+	flex-wrap:wrap;
+}
+
+.fa-chart-line
+{
+	margin-top:22px;
+	margin-left:75px;
+	font-size:1.3em;
+}
+
+aside div
+{
+	background-color:white;
+	width:220px;
+	height:100px;
+	margin-left:10px;
+	border-radius:10px;
+	display:flex;
+	box-shadow:6px 6px 12px #F2F2F2;
+}
+
+aside div div
+{
+	flex-wrap:wrap;
+}
+
+
+aside em
+{
+	font-weight:bold;
+	font-style:normal;
+	font-size:0.6em;
+	/* border:1px solid green; */
+	margin-top:10px;
+}
+
+aside p
+{
+	font-size:0.6em;
+	font-style:normal;
+	/* border:1px solid red; */
+}
+
+aside .fa-star
+{
+	padding-top:18px;
+}
+
+
+
+/*activités*/
+.activites 
+{
+	padding-top:20px;
+
+}
+
+.activites h2
+{
+	font-size:0.8em;
+}
 
 
 /*footer*/
