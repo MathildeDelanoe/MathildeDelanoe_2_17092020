@@ -43,7 +43,7 @@ nav li
 	margin:10px 20px 20px 20px;
 }
 
-nav ul li:nth-child(1) a ,nav ul li:nth-child(2) a 
+nav li:nth-child(1) a ,nav li:nth-child(2) a 
 {
 	
 	text-decoration:none;
@@ -51,15 +51,15 @@ nav ul li:nth-child(1) a ,nav ul li:nth-child(2) a
 	
 }
 
-nav ul li:nth-child(1) a:hover ,nav ul li:nth-child(1) a:focus,
-nav ul li:nth-child(2) a:hover ,nav ul li:nth-child(2) a:focus
+nav li:nth-child(1) a:hover ,nav li:nth-child(1) a:focus,
+nav li:nth-child(2) a:hover ,nav li:nth-child(2) a:focus
 {
 	border-top:1px solid blue;
 	padding:25px 10px 0px 10px;
 	color:#0065FC;
 }
 
-header nav ul li:last-child a
+nav li:last-child a
 {
 	color:#0065FC;
 	font-weight:bold;
@@ -127,8 +127,8 @@ input
 }
 
 
-.recherche ul li:nth-child(2),.recherche ul li:nth-child(3)
-,.recherche ul li:nth-child(4),.recherche ul li:nth-child(5)
+.recherche li:nth-child(2),.recherche li:nth-child(3)
+,.recherche li:nth-child(4),.recherche li:nth-child(5)
 {
 	padding: 5px 10px 5px 30px;
 	border : 1px solid rgb(210,210,210);
@@ -140,7 +140,7 @@ input
 }
 
 
-.recherche ul li div
+.recherche li div
 {
 	left: -2px;
 	top:-1px;
@@ -152,36 +152,36 @@ input
 }
 
 
-.recherche ul li:first-child
+.recherche li:first-child
 {
 	font-weight:bold;
 }
 
-.recherche ul li:nth-child(2)
+.recherche li:nth-child(2)
 {
 	left: 15px;
 	margin-left: 15px;
 }
-.recherche ul li:nth-child(3)
+.recherche li:nth-child(3)
 {
 	left: 30px;
 }
-.recherche ul li:nth-child(4)
+.recherche li:nth-child(4)
 {
 	left: 50px;
 }
-.recherche ul li:nth-child(5)
+.recherche li:nth-child(5)
 {
 	left: 70px;
 } 
 
-.recherche ul a
+.recherche a
 {
 	text-decoration: none;
 	color:black;
 }
 
-.recherche ul a:hover
+.recherche a:hover
 {
 	background-color:#F2F2F2;
 	padding:5px 0px 5px 0px;
@@ -239,7 +239,7 @@ section p
 }
 
 
-.hebergements
+#hebergements
 {
 	background-color:#F2F2F2;
 	width:69%;
@@ -247,7 +247,7 @@ section p
 	border-radius:10px;
 }
 
-.hebergements h2,aside h2
+#hebergements h2,aside h2
 {
 	font-size: 0.8em;
 	padding-top:15px;
@@ -267,21 +267,37 @@ section p
 }
 
  
-.hebergements p
+#hebergements p
 {
 	font-size: 0.6em;
 	padding-left:8px;
 } 
 
-.hebergements a
+#hebergements a
 {
 	color:black;
 	text-decoration:none;
-	font-weight:bold;
 	padding-left:10px;
 }
 
-.hebergements div:first-of-type div:nth-child(odd)
+#hebergements p a
+{
+	font-weight:bold; 
+	padding-left:12px;
+}
+
+#hebergements div:first-of-type div
+{
+	background-color:white;
+	width:30%;
+	height:55%; 
+	margin-left:2.5%;
+	border-radius : 10px;
+	margin-bottom:20px;
+	box-shadow:6px 6px 12px rgb(210,210,210);
+}
+
+/* #hebergements div:first-of-type div:nth-child(odd)
 {
 	background-color:white;
 	width:30%;
@@ -294,7 +310,7 @@ section p
 
 
 
-.hebergements div:first-of-type div:nth-child(even)
+#hebergements div:first-of-type div:nth-child(even)
 {
 	background-color:white;
 	width:30%;
@@ -303,10 +319,10 @@ section p
 	border-radius : 10px;
 	margin-bottom:20px;
 	box-shadow:6px 6px 12px #F2F2F2;
-}
+} */
 
 
-.hebergements figcaption
+#hebergements figcaption
 {
 	font-size:0.6em;
 	font-weight:bold;
@@ -352,7 +368,7 @@ aside div
 	margin-left:10px;
 	border-radius:10px;
 	display:flex;
-	box-shadow:6px 6px 12px #F2F2F2;
+	box-shadow:6px 6px 12px rgb(210,210,210);
 }
 
 aside div div
@@ -385,16 +401,51 @@ aside .fa-star
 
 
 /*activités*/
-.activites 
+#activites 
 {
 	padding-top:20px;
 
 }
 
-.activites h2
+#activites h2
 {
 	font-size:0.8em;
 }
+
+#activites div:first-of-type{
+    display:flex;
+    width:100%;
+	height:320px;
+    justify-content:space-between;
+}
+
+#activites div:first-of-type div:nth-child(odd)
+{
+    background-color:white;
+    width:200px;
+	height:280px;
+	box-shadow:6px 6px 12px #F2F2F2;
+    border-radius:10px;
+}
+
+#activites div:first-of-type div:nth-child(even) div
+{
+	background-color:white;
+    width:200px;
+    height:130px;
+	box-shadow:6px 6px 12px #F2F2F2;
+    border-radius:10px;
+}
+
+#activites figcaption
+{
+	font-size:0.6em;
+	font-weight:bold;
+	padding-top:5px;
+	padding-left:5px;
+}
+
+
 
 
 /*footer*/
@@ -418,9 +469,15 @@ footer div
 	
 }
 
-footer div p
+footer p
 {
 	margin:0px 0px 5px 0px;
 	
+}
+
+footer a
+{
+	text-decoration : none;
+	color:black
 }
 
