@@ -10,9 +10,8 @@
 #page
 {
 	margin:auto;
-	width:900px;
+	width:50%;
 	font-family:Raleway, Arial,sans-serif;
-	
 }
 
 /*header*/
@@ -24,7 +23,7 @@ header
 
 header img
 {
-	margin-top:20px;
+	margin-top:30px;
 	width:60px;
 }
 
@@ -67,6 +66,10 @@ nav li:last-child a
 }
 
 /*premiere section : partie recherche et filtres*/
+section
+{
+	margin-bottom: 15px;
+}
 h1
 {
 	font-size:1em;
@@ -78,7 +81,6 @@ h2
 	font-size:0.8em;
 	font-weight:normal;
 }
-
 
 section p
 {
@@ -126,15 +128,20 @@ form  a
 input
 {
 	border-radius:10px;
-	padding:8px 70px 8px 45px;
+	padding:8px 100px 8px 45px;
 	font-weight:bold;
 	font-size:0.8em;
 	border:1px solid #F2F2F2;
 }
 
+
+form:last-of-type
+{
+	display:none;
+}
+
 .recherche ul
 {
-	/* justify-content: flex-start; */
 	align-items: center;
 	margin-left:0px;
 	padding-left:0px;
@@ -203,7 +210,7 @@ input
 	padding-top:3px;
 }
 
-.fa-money-bill-wave
+.fa-money-bill-wave,.fa-dog
 {
 	padding-left:7px;
 }
@@ -238,16 +245,16 @@ h3
 }
 
 
-/* #hebergements */
+/* hebergements */
 figcaption
 {
-	font-size:0.6em;
+	font-size:0.7em;
 	font-weight:bold;
 	padding-top:2px;
 	padding-left:5px;
 }
 
-.heb_pop > div:first-child
+.heb_pop > div
 {
 	background-color:#F2F2F2;
 	width:69%;
@@ -257,33 +264,33 @@ figcaption
 
 .heb_pop h3
 {
-	padding-top:15px;
-	padding-left:20px;
+	margin:20px 0px 0px 20px;
+}
+
+.heb_pop > div > h3
+{
+	margin-bottom: 8px;
 }
 
 .heb_pop h3+div
 {
 	display:flex;
 	flex-wrap: wrap;
-	/* border:1px solid green; */
-}
-
-.heb_pop h3+div p
-{
-	margin:0px 0px 3px 0px;
+	align-content: space-around;
+	justify-content: space-evenly;
+	height: 75%;
 }
  
 .heb_pop > div p
 {
 	font-size: 0.6em;
-	padding-left:8px;
-} 
-/* 
-#hebergements a
+	margin: 0px 0px 3px 8px; 
+}
+
+.heb_pop > div > p
 {
-	color:black;
-	text-decoration:none;
-} */
+	margin-top: 20px;
+}
 
 .heb_pop > div > p a
 {
@@ -295,24 +302,19 @@ figcaption
 {
 	background-color:white;
 	width:30%;
-	height:55%; 
-	margin-left:2.5%;
 	border-radius : 10px;
-	margin-bottom:20px;
 	box-shadow:6px 6px 12px rgb(210,210,210);
 }
 
-/* #hebergements div:first-of-type div figure */
 .heb_pop > div figure
 {
 	margin:3px;
 }
 
-/* #hebergements div:first-of-type div img */
 .heb_pop > div img
 {
-	width:180px;
-	height:100px; 
+	width:100%;
+	height:100px;
 	border-radius:10px 10px 0 0;
 	object-fit:cover;
 }
@@ -334,39 +336,58 @@ aside
 	width:28%;
 	height:430px;
 	border-radius:10px;
-	display:flex;
-	flex-wrap:wrap;
+}
+
+aside > div:first-child
+{
+	position: relative;
+	width: 100%;
+	height:10%;
+}
+
+aside h3
+{
+	position: absolute;
+	left:0;
+	top:0;
 }
 
 .fa-chart-line
 {
-	margin-top:22px;
-	margin-left:75px;
-	font-size:1.3em;
+	position: absolute;
+	right:20px;
+	top:20px;
+	font-size:0.8em;
+	font-style:normal;
 }
-/* 
+
 aside a
 {
-	text-decoration:none;
-	color:black;
-} */
+	width:80%;
+	margin:0px 10% 0 10%;
+}
 
+aside > div:nth-child(2)
+{
+	margin: 2% 0 0 0;
+	display:flex;
+	flex-direction: column;
+	justify-content: space-between;
+	height:80%;
+}
 
-aside div:first-child
+aside > div:nth-child(2) div:first-child
 {
 	background-color:white;
-	width:210px;
+	width:100%;
 	height:98px;
-	margin-left:20px;
-	margin-bottom:25px;
 	border-radius:10px;
 	display:flex;
 	box-shadow:6px 6px 12px rgb(210,210,210);
 }
 
-aside div div
+aside div div div
 {
-	width:100px;
 	flex-wrap:wrap;
 	margin-left:10px;
 }
@@ -375,7 +396,7 @@ aside img
 {
 	width:90px;
 	height:90px; 
-	margin-top:4px ;
+	margin-top:4px;
 	margin-left:4px;
 	border-radius:10px 0px 0px 10px;
 	object-fit:cover;
@@ -390,58 +411,61 @@ aside p
 aside p:first-child
 {
 	font-weight:bold;
+	font-size:0.7em;
+	margin-bottom:0px;
 }
 
 aside .fa-star
 {
-	padding-top:18px;
+	padding-top:20px;
 }
 
 /*activités*/
 #activites
 {
-	padding-top:20px;
-	padding-bottom:20px;
+	padding:0;
+	height: auto;
 }
 
-/* #activites div:first-of-type{
-    display:flex;
-    width:100%;
-	height:320px;
-	justify-content:space-between;
-	border:1px solid green;
-} */
-
-#activites figure
+#activites h3
 {
-	margin:0;
+	margin-top:40px;
 }
 
 #activites > div
 {
     display:flex;
     width:100%;
-	height:300px;
 	justify-content:space-between;
+}
+
+#activites figure
+{
+	width: 100%;
+	margin:0;
 }
 
 #activites img
 {
-	width:200px;
+	width: 100%;
 	object-fit:cover;
 	border-radius:10px 10px 0 0;
 }
 
+#activites figcaption
+{
+	padding-top:5px;
+}
+
 #activites > div > div
 {
-	width:200px;
+	width: 22.5%;
 }
 
 /* Gestion des colonnes impaires */
 #activites > div > div:nth-child(odd)
 {
     background-color:white;
-    /* width:200px; */
 	height:280px;
 	box-shadow:6px 6px 12px #F2F2F2;
 	border-radius:10px;
@@ -449,38 +473,8 @@ aside .fa-star
 
 #activites > div > div:nth-child(odd) img
 {
-	height:250px; 
+	height:250px;
 }
-
-/* Gestion des dernieres images des colonnes paires */
-#activites > div > div:nth-child(even) > div:last-child
-{
-	margin-top:20px;
-}
-
-/* Gestion de la 4e colonne */
-#activites > div > div:last-child div
-{
-	background-color:white;
-    /* width:200px; */
-    height:130px;
-	box-shadow:6px 6px 12px #F2F2F2;
-    border-radius:10px;
-}
-
-#activites > div > div:last-child img
-{
-	/* width:200px; */
-	height:100px;
-	/* border:1px solid green; */
-}
-
-/* #activites div:first-of-type div:nth-child(4) div img
-{
-	
-	object-fit:cover;
-    border:1px solid pink;
-} */
 
 /* Gestion de la 2e colonne */
 #activites > div > div:nth-child(2) div:first-child 
@@ -495,7 +489,6 @@ aside .fa-star
 	height:130px;
 }
 
-
 #activites > div > div:nth-child(2) div:last-child
 {
 	height:100px;
@@ -508,11 +501,25 @@ aside .fa-star
 	height:70px;
 }
 
-#activites figcaption
+/* Gestion de la 4e colonne */
+#activites > div > div:last-child div
 {
-	padding-top:5px;
+	background-color:white;
+    height:130px;
+	box-shadow:6px 6px 12px #F2F2F2;
+    border-radius:10px;
 }
 
+#activites > div > div:last-child img
+{
+	height:100px;
+}
+
+/* Gestion des dernieres images des colonnes paires */
+#activites > div > div:nth-child(even) > div:last-child
+{
+	margin-top:20px;
+}
 
 /*footer*/
 footer
@@ -520,8 +527,9 @@ footer
 	background-color:#F2F2F2;
 	display:flex;
 	font-size:0.8em;
-	width: 950px;
+	width: 52%;
 	margin:auto;
+	margin-top: 30px;
 }
 
 h4
