@@ -73,6 +73,13 @@ h1
 	margin-bottom:0px;
 }
 
+h2
+{
+	font-size:0.8em;
+	font-weight:normal;
+}
+
+
 section p
 {
 	font-size:0.8em;
@@ -219,7 +226,7 @@ input
 }
 
 /*partie hébergements et populaire*/
-h2
+h3
 {
 	font-size: 0.8em;
 }
@@ -248,20 +255,20 @@ figcaption
 	border-radius:10px;
 }
 
-.heb_pop h2
+.heb_pop h3
 {
 	padding-top:15px;
 	padding-left:20px;
 }
 
-.heb_pop h2+div
+.heb_pop h3+div
 {
 	display:flex;
 	flex-wrap: wrap;
 	/* border:1px solid green; */
 }
 
-.heb_pop h2+div p
+.heb_pop h3+div p
 {
 	margin:0px 0px 3px 0px;
 }
@@ -507,8 +514,6 @@ aside .fa-star
 }
 
 
-
-
 /*footer*/
 footer
 {
@@ -519,7 +524,7 @@ footer
 	margin:auto;
 }
 
-h3
+h4
 {
 	font-size:1em;
 }
