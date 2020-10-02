@@ -737,4 +737,24 @@ footer p
 		height:100px;
 	}
 
+
+	footer
+	{
+		width:85%;
+		flex-direction:column;
+		/* margin:0; */
+		/* margin-left:25%; */
+	}
+
+
+	footer div
+	{
+		margin-top:0px;
+		margin-bottom:10px;
+		margin-left:25px;
+	}
+
+
+
+
 }
