@@ -19,12 +19,12 @@ header
 {
 	display: flex;
     justify-content: flex-start;
-    align-items: center;
+	align-items: center;
 }
 
 header img
 {
-	width: 10%;
+	width: 5%;
 }
 
 nav
@@ -43,13 +43,11 @@ nav ul
 
 nav ul li
 {
-    /*padding:0;*/
     padding: 20px 10px 20px 10px;
 }
 
 nav ul li a
 {
-    /*padding:0;*/
     margin:0;
     padding: 20px 10px 20px 10px;
     width: 100%;
@@ -297,7 +295,7 @@ figcaption
 	flex-wrap: wrap;
 	align-content: space-around;
 	justify-content: space-evenly;
-	height: 75%;
+	height: 80%;
 }
  
 .heb_pop > div p
@@ -308,7 +306,7 @@ figcaption
 
 .heb_pop > div > p
 {
-	margin-top: 20px;
+	margin-top: 10px;
 }
 
 .heb_pop > div > p a
@@ -574,6 +572,12 @@ footer p
 		width:100%;
 	}
 
+	section
+	{
+		width:85%;
+		margin:auto;
+	}
+
 	/*header*/
     header
     {
@@ -609,8 +613,6 @@ footer p
         width: 100%;
         height: 100%;
         text-align: center;
-        /*display:flex;
-        align-content: center;*/
     }
 
     nav ul li
@@ -619,7 +621,6 @@ footer p
         margin:0px;
         width: 50%;
         height: 100%;
-        /*border:1px solid red;*/
         display:flex;
     }
 
@@ -629,8 +630,7 @@ footer p
         margin:0;
         font-size: 1.5em;
         width: 100%;
-        height:100%;
-        /*border: 1px solid green;*/
+        height:100%;  
         border-bottom: 2px solid rgb(210,210,210);
     }
 
@@ -646,18 +646,6 @@ footer p
 		border:none;
     }
 
-    /*ul
-    {
-        list-style-type: none;
-        display:flex;
-    }
-
-    a 
-    {
-        text-decoration:none;
-        color:black;
-    }*/
-
     nav li:nth-child(1) a:hover, nav li:nth-child(1) a:focus,
     nav li:nth-child(2) a:hover, nav li:nth-child(2) a:focus
     {
@@ -665,5 +653,88 @@ footer p
         border-top: none;
         border-bottom:2px solid #0065FC;
         color:#0065FC;
-    }
+	}
+	
+	/* partie populaire et hébergements */
+	aside
+	{
+		width:100%;
+	}
+
+	.heb_pop
+	{
+		flex-direction:column-reverse;
+	}
+
+	.heb_pop > div
+	{
+		width:100%;
+		height:100%;
+		background-color:white;
+	}
+
+	.heb_pop > div > div div
+	{
+		width:90%;
+		margin-bottom:20px;
+	}
+
+	/* partie activité*/
+
+	#activites h3{
+
+		margin-left:15px;
+	}
+	#activites > div
+	{
+		flex-direction:column;
+	}
+
+	#activites > div > div
+	{
+		width: 90%;
+		margin:auto;
+		margin-bottom:20px;
+	}
+
+
+	/* Gestion des dernieres images des colonnes paires */
+	#activites > div > div:nth-child(even) div:last-child
+	{
+		margin-top:20px;
+	}
+
+	/* Gestion des colonnes impaires */
+	#activites > div > div:nth-child(odd)
+	{
+		height:130px;
+	}
+
+	#activites > div > div:nth-child(odd) img
+	{
+		height:100px;
+	}
+
+		
+	/* Gestion de la 2e colonne */
+	#activites > div > div:nth-child(2) div:first-child 
+	{
+		height:130px;
+	}
+
+	#activites > div > div:nth-child(2) div:first-child img
+	{
+		height:100px;
+	}
+
+	#activites > div > div:nth-child(2) div:last-child
+	{
+		height:130px;
+	}
+
+	#activites > div > div:nth-child(2) div:last-child img
+	{
+		height:100px;
+	}
+
 }
