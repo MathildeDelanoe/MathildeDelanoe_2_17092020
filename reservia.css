@@ -1,4 +1,4 @@
-/*page globale*/
+/* page globale */
 @font-face
 {
     font-family: 'Raleway';
@@ -14,7 +14,7 @@
     font-family:Raleway, Arial,sans-serif;
 }
 
-/*header*/
+/* header */
 header
 {
     display: flex;
@@ -69,7 +69,7 @@ nav a:hover, nav a:focus
     color:#0065FC;
 } 
 
-/*premiere section : partie recherche et filtres*/
+/* premiere section : partie recherche et filtres */
 h1
 {
     font-size:1em;
@@ -92,7 +92,7 @@ section p
     margin-top:5px;
 }
 
-/*formulaire*/
+/* formulaire */
 form
 {
     width: 300px;
@@ -150,7 +150,7 @@ form:nth-child(4)
     display:none;
 }
 
-/*filtres*/
+/* filtres */
 .recherche ul
 {
 	width:60%;
@@ -226,7 +226,7 @@ form:nth-child(4)
     margin-left:5px;
 }
 
-/*partie hébergements et populaire*/
+/* partie hébergements et populaire */
 h3
 {
     font-size: 0.8em;
@@ -415,16 +415,16 @@ aside p:last-child
     left:0px;
 }
 
-/*activités*/
+/* activités */
 #activites
 {
-    padding:0;
-    height: auto;
+    /* padding:0;
+    height: auto; */
 }
 
 #activites h3
 {
-    margin-top:40px;
+    margin-top:30px;
 }
 
 #activites > div
@@ -432,6 +432,11 @@ aside p:last-child
     display:flex;
     width:100%;
     justify-content:space-between;
+}
+
+#activites > div > div
+{
+    width: 22.5%;
 }
 
 #activites figure
@@ -443,6 +448,7 @@ aside p:last-child
 #activites img
 {
     width: 100%;
+    height:100%;
     object-fit:cover;
     border-radius:10px 10px 0 0;
 }
@@ -452,34 +458,41 @@ aside p:last-child
     padding-top:5px;
 }
 
-#activites > div > div
-{
-    width: 22.5%;
-}
-
 /* Gestion des colonnes impaires */
 #activites > div > div:nth-child(odd)
 {
-    background-color:white;
     height:280px;
     box-shadow:6px 6px 12px #F2F2F2;
     border-radius:10px;
 }
 
-#activites > div > div:nth-child(odd) img
+#activites > div > div:nth-child(odd) figure
 {
     height:250px;
+}
+
+/* Gestion des colonnes paires */
+#activites > div > div:nth-child(even)
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height:280px;
+}
+
+#activites > div > div:nth-child(even) div
+{
+    box-shadow:6px 6px 12px #F2F2F2;
+    border-radius:10px;
 }
 
 /* Gestion de la 2e colonne */
 #activites > div > div:nth-child(2) div:first-child 
 {
     height:160px;
-    box-shadow:6px 6px 12px #F2F2F2;
-    border-radius:10px;
 }
 
-#activites > div > div:nth-child(2) div:first-child img
+#activites > div > div:nth-child(2) div:first-child figure
 {
     height:130px;
 }
@@ -487,36 +500,25 @@ aside p:last-child
 #activites > div > div:nth-child(2) div:last-child
 {
     height:100px;
-    box-shadow:6px 6px 12px #F2F2F2;
-    border-radius:10px;
 }
 
-#activites > div > div:nth-child(2) div:last-child img
+#activites > div > div:nth-child(2) div:last-child figure
 {
     height:70px;
 }
 
 /* Gestion de la 4e colonne */
-#activites > div > div:last-child div
+#activites > div > div:nth-child(4) div
 {
-    background-color:white;
     height:130px;
-    box-shadow:6px 6px 12px #F2F2F2;
-    border-radius:10px;
 }
 
-#activites > div > div:last-child img
+#activites > div > div:nth-child(4) figure
 {
     height:100px;
 }
 
-/* Gestion des dernieres images des colonnes paires */
-#activites > div > div:nth-child(even) > div:last-child
-{
-    margin-top:20px;
-}
-
-/*footer*/
+/* footer */
 footer
 {
     background-color:#F2F2F2;
@@ -635,13 +637,13 @@ footer p
         margin:auto;
     }
 
-    /*premiere section : partie recherche et filtres*/
+    /* premiere section : partie recherche et filtres */
     .recherche
     {
 		width:65%;
     }
 
-    /*formulaire*/
+    /* formulaire */
     .recherche form:first-of-type
     {
         display:none;
@@ -678,7 +680,7 @@ footer p
         color:white;
     }
 
-    /*filtres*/
+    /* filtres */
     .recherche ul
     {
 		width: 100%;
@@ -722,59 +724,36 @@ footer p
         margin-bottom:20px;
     }
 
-    /* partie activité*/
-    #activites h3{
-
+    /* partie activité */
+    #activites h3
+    {
         margin-left:15px;
     }
+
     #activites > div
     {
+        height:900px;
         flex-direction:column;
+        justify-content:space-between;
     }
 
     #activites > div > div
     {
         width: 90%;
         margin:auto;
-        margin-bottom:20px;
     }
 
-
-    /* Gestion des dernieres images des colonnes paires */
-    #activites > div > div:nth-child(even) div:last-child
-    {
-        margin-top:20px;
-    }
-
-    /* Gestion des colonnes impaires */
-    #activites > div > div:nth-child(odd)
-    {
-        height:130px;
-    }
-
-    #activites > div > div:nth-child(odd) img
-    {
-        height:100px;
-    }
-
-        
-    /* Gestion de la 2e colonne */
-    #activites > div > div:nth-child(2) div:first-child 
-    {
-        height:130px;
-    }
-
-    #activites > div > div:nth-child(2) div:first-child img
-    {
-        height:100px;
-    }
-
+    /* Mise a la meme dimension des colonnes impaires et de la 2e colonne */
+    #activites > div > div:nth-child(odd),
+    #activites > div > div:nth-child(2) div:first-child,
     #activites > div > div:nth-child(2) div:last-child
     {
         height:130px;
     }
 
-    #activites > div > div:nth-child(2) div:last-child img
+    #activites > div > div:nth-child(odd) figure,
+    #activites > div > div:nth-child(2) div:first-child figure,
+    #activites > div > div:nth-child(2) div:last-child figure
     {
         height:100px;
     }
@@ -840,6 +819,7 @@ footer p
         margin-bottom:20px;
     }
 
+    /* partie activité */
     #activites figcaption
     {
         font-size:0.6em;
