@@ -244,6 +244,12 @@ h3
     justify-content:space-between;
 }
 
+em
+{
+    font-style: normal;
+    font-weight:bold;
+}
+
 
 /* hebergements */
 figcaption
@@ -544,6 +550,7 @@ footer p
 /* Partie responsive commune pour tous types d'ecran inferieur a 1024px*/
 @media all and (max-width:1024px)
 {
+    /* header */
     header
     {
         flex-wrap: wrap;
@@ -612,11 +619,13 @@ footer p
         border-bottom:2px solid #0065FC;
     }
     
+    /* partie hébergements et populaire */
     .heb_pop
     {
         flex-direction:column-reverse;
     }
     
+    /* footer */
     footer
     {
         width:90%;
@@ -834,6 +843,13 @@ footer p
 /* partie responsive petite version (en-dessous de 250px)*/
 @media all and (max-width:250px)
 {
+    /* formulaire */
+    input:nth-child(2)
+    {
+        font-size: 0.8em;
+    }
+
+    /* partie populaire */
     aside a
     {
         width:80%;
@@ -841,10 +857,5 @@ footer p
     aside p, aside p:first-child
     {
         font-size:0.6em;
-    }
-
-    input:nth-child(2)
-    {
-        font-size: 0.8em;
     }
 }
