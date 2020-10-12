@@ -422,12 +422,6 @@ aside p:last-child
 }
 
 /* activités */
-#activites
-{
-    /* padding:0;
-    height: auto; */
-}
-
 #activites h3
 {
     margin-top:30px;
@@ -630,8 +624,7 @@ footer p
 }
 
 /* partie responsive telephone */
-@media all and (max-width:730px)
-/* @media all and (max-width:450px) */
+@media all and (max-width:767px)
 {
     #page
     {
@@ -731,6 +724,11 @@ footer p
         margin-bottom:20px;
     }
 
+    aside a
+    {
+        width:70%;
+    }
+
     /* partie activité */
     #activites h3
     {
@@ -773,8 +771,8 @@ footer p
 }
 
 
-/* partie responsive tablette (entre 731px et 1024px)*/
-@media all and (min-width:731px) and (max-width:1024px)
+/* partie responsive tablette (entre 768px et 1024px)*/
+@media all and (min-width:768px) and (max-width:1024px)
 {
     #page
     {
@@ -830,5 +828,23 @@ footer p
     #activites figcaption
     {
         font-size:0.6em;
+    }
+}
+
+/* partie responsive petite version (en-dessous de 250px)*/
+@media all and (max-width:250px)
+{
+    aside a
+    {
+        width:80%;
+    }
+    aside p, aside p:first-child
+    {
+        font-size:0.6em;
+    }
+
+    input:nth-child(2)
+    {
+        font-size: 0.8em;
     }
 }
