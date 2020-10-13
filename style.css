@@ -632,7 +632,7 @@ footer p
     }
 }
 
-/* partie responsive telephone */
+/* partie responsive inferieur a 767px */
 @media all and (max-width:767px)
 {
     #page
@@ -779,6 +779,25 @@ footer p
     }
 }
 
+/* partie responsive petite version (en-dessous de 250px)*/
+@media all and (max-width:250px)
+{
+    /* formulaire */
+    input:nth-child(2)
+    {
+        font-size: 0.8em;
+    }
+
+    /* partie populaire */
+    aside a
+    {
+        width:80%;
+    }
+    aside p, aside p:first-child
+    {
+        font-size:0.6em;
+    }
+}
 
 /* partie responsive tablette (entre 768px et 1024px)*/
 @media all and (min-width:768px) and (max-width:1024px)
@@ -840,22 +859,34 @@ footer p
     }
 }
 
-/* partie responsive petite version (en-dessous de 250px)*/
-@media all and (max-width:250px)
+/* partie responsive version portable (entre 1025px et 1600px)*/
+@media all and (min-width:1025px) and (max-width:1400px)
 {
-    /* formulaire */
-    input:nth-child(2)
-    {
-        font-size: 0.8em;
-    }
-
-    /* partie populaire */
-    aside a
+    #page
     {
         width:80%;
     }
-    aside p, aside p:first-child
+
+    aside a
     {
-        font-size:0.6em;
+        width: 90%;
+    }
+
+    footer
+    {
+        width: 82%;
+    }
+}
+
+@media all and (min-width:1401px) and (max-width:1600px)
+{
+    #page
+    {
+        width:70%;
+    }
+
+    footer
+    {
+        width: 72%;
     }
 }
