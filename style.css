@@ -664,6 +664,11 @@ footer p
         width: 100%;
     }
 
+    form p
+    {
+        position: relative;
+    }
+
     label
     {
         width: 10%;
@@ -671,17 +676,20 @@ footer p
     
     input:nth-child(2)
     {
-        width: 75%;
+        width: 90%;
     }
 
     form p a
     {
         width: 15%;
+        height:100%;
         display: flex;
         align-items: center;
         justify-content: center;
         border-radius:10px;
         background-color:#0065FC;
+        position: absolute;
+        right:-10px;
     }
 
     .fa-search
@@ -867,11 +875,13 @@ footer p
         width:80%;
     }
 
+    /* populaires */
     aside a
     {
         width: 90%;
     }
 
+    /* footer*/
     footer
     {
         width: 82%;
@@ -885,6 +895,7 @@ footer p
         width:70%;
     }
 
+    /* footer */
     footer
     {
         width: 72%;
