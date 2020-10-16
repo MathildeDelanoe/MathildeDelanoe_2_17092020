@@ -7,11 +7,15 @@
     font-style: normal;
 }
 
+body
+{
+    font-family:Raleway, Arial,sans-serif;
+}
+
 #page
 {
     margin:auto;
     width:50%;
-    font-family:Raleway, Arial,sans-serif;
 }
 
 /* header */
